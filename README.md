@@ -2,7 +2,7 @@
 
 Phosphatidylinositol 3-kinase alpha inhibitors (PI3Kαis) have revolutionized breast cancer treatment, but acquired resistance remains a major clinical challenge, with around 40% of patients experiencing progression within 4-6 months. Current drug response prediction (DRP) methods typically rely on individual pathways or biomarkers, limiting their ability to capture complex cancer-specific molecular interactions and predict resistance mechanisms. To overcome these limitations, we present AdaSemb, an adaptive, knowledge-driven deep learning framework that uses a multi-protein assembly map to predict responses and resistance to PI3Kαi. AdaSemb comprises two modules: the AdaSemb-PA module incorporates tumor genomic variations into a biological structural neural network. In contrast, the AdaSemb-DRP module uses conditional domain adversarial networks (CDAN) to enhance gene-drug distribution generalization. By combining genomic data with drug molecular structures, AdaSemb identifies critical protein combinations linked to drug resistance. In validation with 1244 cancer cell lines and patient-derived xenografts (PDX), AdaSemb outperformed existing DRP models. In a cohort of 116 breast cancer patients from TCGA, it predicted significantly longer survival for sensitive patients, surpassing traditional biomarkers in accuracy. Furthermore, we identified seven key assemblages that integrate mutations from 93 genes, which distinguish alpelisib-sensitive and -resistant cell lines. This study provides a framework for the comprehensive evaluation of how tumor genomic profiles regulate resistance to PI3Kαi.
 
-
+![Model Image](model/model.png)
 
 ## The environment of AdaTrans
 ```
