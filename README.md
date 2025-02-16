@@ -19,13 +19,10 @@ scikit-learn==1.3.2
 ```
 
 ## Dataset description
-The datasets used in this study are all publicly available. GDSC version 1: \url{https://www.cancerrxgene.org/downloads/bulk_download}; 
-GDSC version 2: {https://www.cancerrxgene.org/downloads/bulk_download}; 
-CTRP version 1: {https://portals.broadinstitute.org/ctrp.v1/}; 
-CTRP version 2: {https://portals.broadinstitute.org/ctrp.v2.1/}; 
-PDX: {https://www.nature.com/articles/nm.3954}; 
-Project GENIE: {https://genie.cbioportal.org/study/summary?id=brca_akt1_genie_2019}; 
-cBioPortal: {https://www.cbioportal.org/datasets}.
+The datasets used in this study are all publicly available. GDSC version 1: https://www.cancerrxgene.org/downloads/bulk_download; 
+GDSC version 2: https://www.cancerrxgene.org/downloads/bulk_download; 
+CTRP version 1: https://portals.broadinstitute.org/ctrp.v1/; 
+CTRP version 2: https://portals.broadinstitute.org/ctrp.v2.1/; 
 
 
 ## Run the moedel  in a GPU server, execute the following::
