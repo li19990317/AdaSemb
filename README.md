@@ -25,7 +25,7 @@ CTRP version 1: https://portals.broadinstitute.org/ctrp.v1/;
 CTRP version 2: https://portals.broadinstitute.org/ctrp.v2.1/; 
 
 
-## Run the moedel  in a GPU server, execute the following::
+## Run the moedel  in a GPU server, execute the following:
 ```sh
 python predict.py   -gene2id gene2ind.txt
                     -cell2id cell2ind.txt
