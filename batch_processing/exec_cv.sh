@@ -11,7 +11,7 @@ nested_folds=1
 
 for ont in "ctg"
 do
-	for drug in "Palbociclib" #"$drugs"
+	for drug in "alpelisib" #"$drugs"
 	do
 		for ((i=1;i<=folds;i++));
 		do
