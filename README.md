@@ -1,20 +1,19 @@
 # AdaSemb: An Adaptive Knowledge-Driven Deep Learning Framework Integrating Cancer Protein Assemblies for Predicting PI3Kα Inhibitor Response and Resistance
 
-Phosphatidylinositol 3-kinase alpha inhibitors (PI3Kαis) have revolutionized breast cancer treatment, but acquired resistance remains a major clinical challenge, with around 40% of patients experiencing progression within 4-6 months. Current drug response prediction (DRP) methods typically rely on individual pathways or biomarkers, limiting their ability to capture complex cancer-specific molecular interactions and predict resistance mechanisms. To overcome these limitations, we present AdaSemb, an adaptive, knowledge-driven deep learning framework that uses a multi-protein assembly map to predict responses and resistance to PI3Kαi. AdaSemb comprises two modules: the AdaSemb-PA module incorporates tumor genomic variations into a biological structural neural network. In contrast, the AdaSemb-DRP module uses conditional domain adversarial networks (CDAN) to enhance gene-drug distribution generalization. By combining genomic data with drug molecular structures, AdaSemb identifies critical protein combinations linked to drug resistance. In validation with 1244 cancer cell lines and patient-derived xenografts (PDX), AdaSemb outperformed existing DRP models. In a cohort of 116 breast cancer patients from TCGA, it predicted significantly longer survival for sensitive patients, surpassing traditional biomarkers in accuracy. Furthermore, we identified seven key assemblages that integrate mutations from 93 genes, which distinguish alpelisib-sensitive and -resistant cell lines. This study provides a framework for the comprehensive evaluation of how tumor genomic profiles regulate resistance to PI3Kαi.
-
+Protein kinases regulate diverse cellular functions, including cell cycle progression, metabolism, differentiation, and survival, with their dysregulation implicated in multiple carcinogenic processes. Phosphatidylinositol 3-kinase alpha inhibitors (PI3Kαis) have revolutionized breast cancer treatment, but acquired resistance remains a major clinical challenge, with around 40% of patients experiencing progression within 4-6 months. Current drug response prediction (DRP) methods typically rely on individual pathways or biomarkers, limiting their ability to capture complex cancer-specific molecular interactions and predict resistance mechanisms. To overcome these limitations, we present AdaSemb, an adaptive, knowledge-driven deep learning framework that uses a multi-protein assembly map to predict responses and resistance to PI3Kαi. AdaSemb comprises two modules: the AdaSemb-PA module incorporates tumor genomic variations into a biological structural neural network. In contrast, the AdaSemb-DRP module uses conditional domain adversarial networks (CDAN) to enhance gene-drug distribution generalization. By combining genomic data with drug molecular structures, AdaSemb identifies critical protein combinations linked to drug resistance. In validation with 1244 cancer cell lines and patient-derived xenografts (PDX), AdaSemb outperformed existing DRP models. In a cohort of 116 breast cancer patients from TCGA, it predicted significantly longer survival for sensitive patients, surpassing traditional biomarkers in accuracy. Furthermore, we identified seven key assemblages that integrate mutations from 93 genes, which distinguish alpelisib-sensitive and -resistant cell lines. These results are applicable to breast cancer patient samples and PDX models, demonstrating AdaSemb’s significant clinical potential in personalized treatment and prediction of resistance for breast cancer.
 ![Model Image](model/model.png)
 
 ## The environment of AdaTrans
 ```
-python==3.11.6
-numpy==1.16.4
-dgl==1.1.2+cu117
-dgllife==0.3.2
-pandas==2.1.1
-rdkit==2023.9.1
-torch==2.1.0+cu121
-scikit-learn==1.3.2
-
+cudatoolkit=11.1
+torchaudio=0.8.0=py37
+torchvision=0.9.0=py37_cu111
+optuna
+python=3.7
+pytorch=1.8.0=py3.7_cuda11.1_cudnn8.0.5_0
+scikit-learn
+networkx
+pandas
 
 ```
 
@@ -42,5 +41,5 @@ python predict.py   -gene2id gene2ind.txt
 ```
 
 # Acknowledgments
-The authors sincerely hope to receive any suggestions from you!  
+The authors sincerely hope to receive any suggestions from you! If you have any questions, please contact us at 2231829@s.hlju.edu.cn. 
 
